@@ -14,3 +14,6 @@ PRIMARY KEY (CustomerId)
 );
 
 EXEC sp_help 'dbo.contact';
+
+ALTER TABLE contact
+  ADD IsDeleted BIT NOT NULL DEFAULT 0;
